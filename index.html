@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>CV Maker</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Vanilla JS | Resume Maker</title>
+
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="page-heading text-center">Resume Maker</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item">
+                        <a class="tab nav-link active" href="#personal-tab">Personal Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="tab nav-link disabled" href="#education-tab">Educational Qualification</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="tab nav-link disabled" href="#work-tab">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="tab nav-link disabled" href="#summary-tab">Summary</a>
+                    </li>
+                </ul>
+
+                <div class="tab-container">
+                    <div id="personal-tab" class="tab-content active card">
+                        <form class="card-body">
+
+                        </form>
+                    </div>
+                    <div id="education-tab" class="tab-content card">
+                        <form class="card-body">
+
+                        </form>
+                    </div>
+                    <div id="work-tab" class="tab-content card">
+                        <form class="card-body">
+
+                        </form>
+                    </div>
+                    <div id="summary-tab" class="tab-content card">
+                        <form class="card-body">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/require.js" data-main="assets/js/main.js"></script>
 </body>
+
 </html>
