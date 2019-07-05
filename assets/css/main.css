@@ -1,4 +1,5 @@
 @import url(./bootstrap.min.css);
+@import url(./flatpickr.min.css);
 @import url(./font-awesome.min.css);
 
 html {
@@ -18,4 +19,12 @@ html {
 
 .tab-container {
     margin-top: 1em;
+}
+
+.gender-container .custom-radio {
+    cursor: pointer;
+}
+
+.gender-container .custom-control-label {
+    cursor: inherit;
 }

@@ -34,28 +34,120 @@
                     </li>
                 </ul>
 
-                <div class="tab-container">
+                <form id="tabs" class="tab-container" novalidate>
                     <div id="personal-tab" class="tab-content active card">
-                        <form class="card-body">
+                        <div class="card-body">
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="name">Summary</label>
+                                    <textarea class="form-control" id="summary" placeholder="Please enter your resume summary"></textarea>
+                                    <div class="invalid-feedback">Please enter a summary</div>
+                                </div>
 
-                        </form>
+                                <div class="col-md-12 mb-3">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Please enter your full name" />
+                                    <div class="invalid-feedback">Please enter a valid name</div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <div class="container-fluid pl-0 pr-0">
+                                        <div class="row">
+                                            <div class="col-md-9">
+                                                <label for="dob">Date of Birth</label>
+                                                <input type="text" class="form-control" id="dob" placeholder="DD/MM/YYYY" />
+                                                <div class="invalid-feedback">Please enter a valid "Date of birth"</div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <label>Age (Yrs)</label>
+                                                <input type="text" disabled class="form-control" id="age" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label>Gender</label>
+                                    <div class="gender-container">
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="male" name="gender" value="M" class="custom-control-input" />
+                                            <label class="custom-control-label" for="male">Male</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="female" name="gender" value="F" class="custom-control-input" />
+                                            <label class="custom-control-label" for="female">Female</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="transgender" name="gender" value="T" class="custom-control-input" />
+                                            <label class="custom-control-label" for="transgender">Transgender</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label for="email">Email</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Please enter your email address" />
+                                    <div class="invalid-feedback">Please enter a valid email address</div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label for="mobile">Mobile Number</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">+91</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="mobile" placeholder="Enter mobile number" />
+                                        <div class="invalid-feedback">Please enter a valid email address</div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label for="address">Address</label>
+                                    <textarea class="form-control" id="address" placeholder="Please enter your address"></textarea>
+                                    <div class="invalid-feedback">Please enter a valid residential address</div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label for="state">State</label>
+                                    <select id="state" class="custom-select form-control">
+                                        <option value="">- Select State -</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select your state of domicile</div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label for="city">City</label>
+                                    <select id="city" class="custom-select form-control"></select>
+                                    <div class="invalid-feedback">Please select your city of domicile</div>
+                                </div>
+
+                                <div class="col-md-12 mb-3">
+                                    <label for="address">Pin Code</label>
+                                    <input type="text" class="form-control" id="pincode" placeholder="Please enter your address PIN CODE" />
+                                    <div class="invalid-feedback">Please enter a valid pincode</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                     <div id="education-tab" class="tab-content card">
-                        <form class="card-body">
+                        <div class="card-body">
 
-                        </form>
+                        </div>
                     </div>
+
                     <div id="work-tab" class="tab-content card">
-                        <form class="card-body">
+                        <div class="card-body">
 
-                        </form>
+                        </div>
                     </div>
+
                     <div id="summary-tab" class="tab-content card">
-                        <form class="card-body">
+                        <div class="card-body">
 
-                        </form>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
